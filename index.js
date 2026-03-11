@@ -14,3 +14,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+app.post('/order', (req, res) => {
+    res.json({ message: "Task 11: Order Received!", status: "Delivered" });
+});
